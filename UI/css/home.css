@@ -1,0 +1,90 @@
+h2{
+    font-size: 300%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.questions{
+    display: flex;
+    border-style: solid;
+    border-width: thin;
+    height:70px;
+}
+.cp{
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px 0px 0px 10px; 
+}
+.votes{
+    border: powderblue;
+   border-style: solid;
+    border-width: thin;
+    width: 50px; 
+    height:50px;
+}
+.answered{
+    border: powderblue;
+    border-style: solid;
+    border-width: thin;
+    width: 60px;
+    height:50px;
+}
+.views{
+    border: powderblue;
+    border-style: solid;
+     border-width: thin;
+     width: 50px;
+     height:50px;
+
+}
+h3{
+    border: powderblue;
+    border-style: hidden;
+    border-width: thin;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+}
+.topic{
+    text-decoration: none;
+}
+.tag-question{
+    flex: 1;
+    border: powderblue;
+    border-style: hidden;
+    color: rgb(161, 161, 223);
+    margin: 5px 0px 0px 10px; 
+}
+.tags{
+    display: flex;
+    margin-top: 0px;
+    border: powderblue;
+    border-style: hidden;
+    width: 800px; 
+   
+}
+.tags a{
+    border-style: hidden;
+    background-color: powderblue;
+    text-decoration: none;
+    margin:0px 10px 0px 0px;
+    padding:0px 5px 0px 5px;
+}
+.time{  
+    margin:0px 10px 0px 0px;
+}
+.time a{   
+    text-decoration: none;
+    color: black;
+}
+.time a:nth-child(2){   
+    color: blue;
+}
+
+.tag-time{
+    display: flex;
+    justify-direction: space-between;
+}
