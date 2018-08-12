@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
-	
+	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="StackOverflow-lite.css">
-		
-<head>
+		<link href="navigation.css" rel="stylesheet" type="text/css"/>
+</head>
 
-</head>		
+ <nav class="logo-nav">		
+		<ul>	
+		<li ><img src="stackoverflow-lite-logo.png" class="main-logo"></li>
+		<li>
+			<div class="search-container">
+				<form action="/action_page.php">
+					<a><input type="text" placeholder="Search Q&A" name="search" ></a>
+					<a><button type="submit">&#x1F50D;</button></a>
+				</form>
+			</div>
+		</li>
+		<li><a href="default.asp" formaction="home.html">Home</a></li>
+		<li><a href="news.asp">Ask!</a></li>
+		<li><a href="contact.asp">My profile</a></li>
+		<li><a href="about.asp">About</a></li>
+		</ul> 
+</nav>
 
 <div id="container_demo" >
 	<a class="hiddenanchor" id="toregister"></a>
@@ -31,7 +47,7 @@
 					<label for="loginkeeping">Keep me logged in</label>
 				</p>
 				<p class="login button"> 
-					<input type="submit" formaction="question.html" value="Login" /> 
+					<input type="submit" formaction="home.html" value="Login" /> 
 				</p>
 				<p class="change_link">
 					Not a member yet ?
@@ -62,7 +78,7 @@
 				</p>
 				<form>
 				<p class="signin button"> 
-					<input type="submit" formaction="question.html" value="Sign up" >
+					<input type="submit" formaction="home.html" value="Sign up" >
 				</p>
 			    </form>
 				<p class="change_link">  
