@@ -8,23 +8,23 @@
 
 <body>
 
-        <nav class="logo-nav">		
-                <ul>	
-                <li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
-                <li>
-                    <div class="search-container">
-                            <a><input type="text" placeholder="Search Q&A" name="search" ></a>
-                            <a><button type="submit">&#x1F50D;</button></a>
-                    </div>
-                </li>
-                <div class="home">
-                <li><a href="default.asp" formaction="home.html">Home</a></li>
-                <li><a href="news.asp">Ask!</a></li>
-                <li><a href="contact.asp">My profile</a></li>
-                <li><a href="about.asp">About</a></li>
+    <nav class="logo-nav">		
+        <ul>	
+        <li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
+        <li>
+            <div class="search-container">
+                    <a><input type="text" placeholder="Search Q&A" name="search" ></a>
+                    <a><button type="submit">&#x1F50D;</button></a>
             </div>
-                </ul> 
-        </nav>
+        </li>
+        <div class="home">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="ask.html">Ask!</a></li>
+        <li><a href="about.asp">Top Questions</a></li>
+        <li><a href="profile.html">Profile</a></li>      
+    </div>
+        </ul> 
+</nav>
     <div class="page">
         <section id="squestions">
 
@@ -80,11 +80,11 @@
                 </form>
             </div>
         </section>
-        <section>
 
-            <h3>
+        <section id="answers">
+            <h2>
                 Answers
-            </h3>
+            </h2>
             <div class="question">
                 <div class="updown">
                     <a href="">
@@ -128,7 +128,6 @@
 
                 </form>
             </div>
-        </section>
 
 
 <section id="post-answer" >
@@ -170,7 +169,6 @@
             </form>
         </div>
         </section>
-        <hr>
         <div class="qpost">
             <form class="post_form">
                 <textarea id="post" value="post answer"></textarea>
@@ -178,6 +176,7 @@
             </form>
         </div>
         </section>
+    </section>
     </div>
 </body>
 
