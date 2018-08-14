@@ -1,0 +1,138 @@
+/*tags*/
+.tag-question{
+    flex: 1;
+    border: powderblue;
+    border-style: hidden;
+    color: rgb(161, 161, 223);
+    margin: 5px 0px 0px 10px; 
+}
+.tags{
+    display: flex;
+    margin-top: 0px;
+    border: powderblue;
+    border-style: hidden;
+    width: 800px; 
+   
+}
+.tags a{
+    border-style: hidden;
+    background-color: powderblue;
+    text-decoration: none;
+    margin:0px 10px 0px 0px;
+    padding:0px 5px 0px 5px;
+}
+.time{  
+    margin:0px 10px 0px 0px;
+}
+.time a{   
+    text-decoration: none;
+    color: black;
+}
+.time a:nth-child(2){   
+    color: blue;
+}
+
+.tag-time{
+    display: flex;
+    justify-direction: space-between;
+}
+body{
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    margin: 0px;
+}
+.page{
+    border-style: solid;
+    border-width:0px 1px 0px 1px;
+    width:1200px;
+    margin:0px 30px 0px 70px;
+}
+h2{
+    text-align: left;
+    margin:10px 50px 0px 0px;
+    padding-bottom:5px;
+}
+.question{
+    display:flex;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    justify-content: space-between;
+    margin-left:0px;
+    width:1200;
+}
+#squestions{
+    margin-left: 0px;
+    margin-right: 40px;
+    padding-top: 20px;
+   
+}
+.updown{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    margin:0px 10px 0px 30px;
+    padding:5px;
+}
+p.main-question{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    margin:0px 90px 0px 0px;
+    height:120px;
+    margin-top:0px;
+    width:1000px;
+
+}
+.comment{
+    display:flex;
+    margin-left:90px;
+}
+p#para{
+    margin-left:40px;
+}
+section#post-answer{
+    display:none;
+}
+
+ 
+  .qpost{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    background-color:#bbbaba;  */
+    align-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .lk{
+      height: 20px;
+      width: 20px;
+      margin: 0px;
+      padding-left: 10px;
+  }
+  
+  .lkn{
+    padding-left: 10px;   
+  }
+  
+.post_form textarea{
+      height: 3cm;
+      width: 15cm;
+  }
+
+  .btn{
+      height: 50px;
+      width: 50px;
+      background-color: #4CAF50;
+      color: white;
+      border-color: #4CAF50;
+      box-shadow: #4CAF50
+  }
+
+input[type=submit]{
+    width: 95%;
+    padding: 10px;
+    display:inline-block;
+}
+
+

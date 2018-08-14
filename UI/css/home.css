@@ -51,6 +51,7 @@ h3{
 .topic{
     text-decoration: none;
 }
+/*tags*/
 .tag-question{
     flex: 1;
     border: powderblue;
@@ -86,5 +87,5 @@ h3{
 
 .tag-time{
     display: flex;
-    justify-direction: space-between;
+    justify-content: space-between;
 }
