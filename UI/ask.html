@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/ask.css"/>
+    <link href="css/navigation.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <nav class="logo-nav">		
+        <ul>	
+        <li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
+        <li>
+            <div class="search-container">
+                    <a><input type="text" placeholder="Search Q&A" name="search" ></a>
+                    <a><button type="submit">&#x1F50D;</button></a>
+            </div>
+        </li>
+        <div class="home">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="ask.asp">Ask!</a></li>
+        <li><a href="about.asp">About</a></li>
+        <li><a href="contact.asp">Profile</a></li>
+        
+    </div>
+        </ul> 
+</nav>
+    <div class="body_container">
+        <div class="body">
+            <div class="header">
+                    <h2>Ask a Question</h2>
+                <div class="profile">
+                    <img src="img/avarter.ico" class="avarter_icon" id="help_icon" />
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="information_divide">
+                        <fieldset>
+                            <fieldset>
+                                <legend>Title</legend>
+                                <input type="text" placeholder="Whats's your programming question? Be specific." id="question_title" />
+                                <br/>
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Body</legend>
+                                <br/>
+                                <textarea id="question_body" rows="6" cols="100" placeholder="Discuss Challenge Here!"></textarea>
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Tag</legend>
+                                <br/>
+                                <input type="text" id="question_tag" placeholder="Enter tags Separated by a Coma">
+                            </fieldset>
+                        </fieldset>
+                        <br>
+                        <br>
+                        <button type="button" class="button" id="post_question"> Post your Question </button>
+
+                    </div>
+                    <div class="information_divide">
+                        <legend>Your Questions</legend>
+                    </div>
+                    <div class="information_divide" id="your_questions">
+
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="information_divide">
+                        <h2>Total Question Posted</h2>
+                        <h2></h2>
+                    </div>
+                    <div class="information_divide">
+                        <h3>Post History</h3>
+                        <div id="post_history">
+                        </div>
+
+                    </div>
+                    <div class="information_divide">
+                        <h3>Best Answers</h3>
+                        <p>Some text..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Js/ask.js"></script>
+</body>
+
+</html>

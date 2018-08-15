@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: fixed;
     width:100%;
+    margin-top:0px 0px;
   }
   
   .logo-nav li {
@@ -85,6 +86,8 @@
       font-size: 20px;
       text-align: right;
       text-decoration: none;
+      list-style: none;
+      border-width:2px 2px 2px 1px;
   }
 
   ul{
@@ -92,22 +95,33 @@
     justify-content:space-around;
   }
    ul div.home{
-    text-align:left;
+    text-align:right;
     border:solid;
-    margin:0px 0px 5px 180px;
+    margin:0px 0px 5px 210px;
     width:395px;
-    border-width:0px 0px 0px 1px;
+    border-width:0px 0px 0px 0px;
+    height:50px;
   }
   ul div.home li{
     border:solid;
-    text-align:center;
-    margin:0px 0px 5px 0px;
+    text-align:right;
+    margin:0px 2px 5px 0px;
     width:90px;
     padding: 14px 0px 0px 5px;
-    border-width:0px 1px 0px 0px;
+    border-width:0px 0px 0px 1px;
+    list-style: none;
   }
   ul div.home li:hover{
-      background-color:rgb(209, 241, 241);
+      background-color:rgb(228, 238, 238);
+  }
+  ul div.home li a{
+    border:solid;
+    text-align:center;
+    margin:0px 2px 500px 0px;
+    width:90px;
+    padding: 0px 0px 0px 5px;
+    border-width:0px 0px 0px 0px;
+    list-style: none;
   }
 
   .active {

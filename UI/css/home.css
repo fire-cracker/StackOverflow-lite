@@ -1,7 +1,11 @@
 h2{
     font-size: 300%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+section{
+    border-style: solid;
+    border-width: thin;
 }
 
 .questions{
