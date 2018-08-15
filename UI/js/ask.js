@@ -25,7 +25,7 @@ function post_question() {
     body_arr[question_length] = body.value;
     tag_arr[question_length] = tag.value;
     date_arr[question_length] = date;
-    questions += "<Fieldset> <legend id='display_title'>" + title_arr[question_length] +"</legend> <div id='display_body'>" + body_arr[question_length]+"</div> <div id='display_tag'>"+ "Tags : " + tag_arr[question_length] +"</div> <div id='display_date'>" +"Posted on : " + date; + "</div> </Fieldset>";
+    questions="<Fieldset> <legend id='display_title'>" + title_arr[question_length] +"</legend> <div id='display_body'>" + body_arr[question_length]+"</div> <div id='display_tag'>"+ "Tags : " + tag_arr[question_length] +"</div> <div id='display_date'>" +"Posted on : " + date; + "</div> </Fieldset>";
     posts += "<div class='fakeimg'>" + title.value + "</div><br>";
     your_questions.innerHTML = questions;
     post_history.innerHTML = posts;
