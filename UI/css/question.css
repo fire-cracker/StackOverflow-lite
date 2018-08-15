@@ -129,7 +129,7 @@ section#post-answer{
       box-shadow: #4CAF50
   }
 
-input[type=submit]{
+input[type=button]{
     width: 95%;
     padding: 10px;
     display:inline-block;

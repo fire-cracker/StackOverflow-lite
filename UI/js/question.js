@@ -7,7 +7,7 @@ function getwords() {
   function getcomment() {
    var drop=document.getElementById("post").value;
     var comments=document.getElementById("comments");
-    comments.innerHTML=drop.innerHTML;
+    comments.innerHTML=drop;
   }
 
   function toggleA() {
