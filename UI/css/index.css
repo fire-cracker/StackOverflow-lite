@@ -1,3 +1,7 @@
+html{
+    height:100%;
+    width:100%;
+}
 /*style the background*/
 body {
     
@@ -7,6 +11,8 @@ body {
    -o-background-size: cover;
 	background-size: cover;
 	margin: 0px;
+	height:100%;
+    width:100%;
  }
 #register, 
 #login{
