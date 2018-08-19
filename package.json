@@ -1,37 +1,20 @@
 {
-  "name": "stackoverflow-lite",
+  "name": "StackOverflow-lite",
   "version": "1.0.0",
   "description": "Andela Developer Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oyedejipeace/StackOverflow-lite.git"
   },
   "keywords": [],
-  "author": "oyedejipeace <oyedejipeace@yahoo.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oyedejipeace/StackOverflow-lite/issues"
   },
-  "homepage": "https://github.com/oyedejipeace/StackOverflow-lite#readme",
-  "dependencies": {
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.3",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.0"
-  },
-  "directories": {
-    "test": "test"
-  }
+  "homepage": "https://github.com/oyedejipeace/StackOverflow-lite#readme"
 }
