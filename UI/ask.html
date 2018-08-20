@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/ask.css"/>
+    <link href="css/ask.css" rel="stylesheet" type="text/css"/>
     <link href="css/navigation.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -37,38 +37,41 @@
 
             <div class="row">
                 <div class="leftcolumn">
+                    <form id="test" method="post">
                     <div class="information_divide">
                         <fieldset>
                             <fieldset>
-                                <legend>Title</legend>
-                                <input type="text" placeholder="Whats's your programming question? Be specific." id="question_title" />
+                                <legend for="title">Title</legend>
+                                <input type="text" name= "title" placeholder="Whats's your programming question? Be specific." id="question_title" />
                                 <br/>
                             </fieldset>
                             <br>
                             <fieldset>
-                                <legend>Body</legend>
+                                <legend for="description">Description</legend>
                                 <br/>
-                                <textarea id="question_body" rows="6" cols="100" placeholder="Discuss Challenge Here!"></textarea>
+                                <textarea id="question_body" name="description" rows="6" cols="100" placeholder="Discuss Challenge Here!"></textarea>
                             </fieldset>
                             <br>
                             <fieldset>
-                                <legend>Tag</legend>
+                                <legend for="tag">Tag</legend>
                                 <br/>
-                                <input type="text" id="question_tag" placeholder="Enter tags Separated by a Coma">
+                                <input type="text" id="question_tag" name="tag" placeholder="Enter tags Separated by a Coma">
                             </fieldset>
                         </fieldset>
                         <br>
                         <br>
-                        <button type="button" class="button" id="post_question"> Post your Question </button>
-
+                        <input type="submit" class="button" id="post_question" value="Post your Question"> 
                     </div>
+                </form>
                     <div class="information_divide">
                         <legend>Your Questions</legend>
                     </div>
+               
                     <div class="information_divide" id="your_questions">
 
                     </div>
                 </div>
+              
                 <div class="rightcolumn">
                     <div class="information_divide">
                         <h2>Total Question Posted</h2>

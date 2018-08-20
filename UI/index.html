@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/css/index.css">
-		<link href="/css/navigation.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/navigation.css"  type="text/css"/>
 </head>
 <body background="img/stackoverflow-lite-background.jpg">
 
@@ -59,27 +59,28 @@
 
 
 		<div id="register" class="animate form">
-			<form  action="mysuperscript.php" autocomplete="on"> 
+			<form id="test" action="mysuperscript.php" autocomplete="on"> 
 				<h1> Sign up </h1> 
 				<p> 
-					<label for="usernamesignup" class="uname" >Your username</label>
-					<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+					<label for="username" class="uname" >Your username</label>
+					<input id="usernamesignup" name="username" required="required" type="text" placeholder="mysuperusername690" />
 				</p>
 				<p> 
-					<label for="emailsignup" class="youmail" > Your email</label>
-					<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+					<label for="email" class="youmail" > Your email</label>
+					<input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
 				</p>
 				<p> 
-					<label for="passwordsignup" class="youpasswd" >Your password </label>
-					<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. *********"/>
+					<label for="password" class="youpasswd" >Your password </label>
+					<input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. *********" onkeypress="checkpass()"/>
 				</p>
 				<p> 
-					<label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
-					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. *********"/>
+					<label for="password" class="youpasswd" >Please confirm your password </label>
+					<input id="confirmpassword" name="password" required="required" type="password" placeholder="eg. *********" onkeypress="checkpass()"/>
 				</p>
+				<p id="message"></p>
 				<form>
 				<p class="signin button"> 
-					<input type="submit" formaction="home.html" value="Sign up" >
+					<input type="submit" formaction="home.html" value="Sign up"id="signup" disabled >
 				</p>
 			    </form>
 				<p class="change_link">  
@@ -91,6 +92,7 @@
 		
 	</div>
 </div>  
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
 

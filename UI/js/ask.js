@@ -35,3 +35,34 @@ function post_question() {
     question_length++;
 }
 
+
+
+var form = document.getElementById("test");
+var obj = {};
+(function() {
+	function toJSONString( form ) {
+		var elements = form.querySelectorAll( "input,div,textarea" );
+		for( var i = 0; i < elements.length; ++i ) {
+			var element = elements[i];
+			var name = element.name;
+			var value = element.value;
+
+			if( name ) {
+				obj[ name ] = value;
+			}
+		}
+
+		return JSON.stringify(obj);
+	}
+
+	document.addEventListener( "DOMContentLoaded", function() {
+		form.addEventListener( "submit", function(e) {
+			e.preventDefault();
+			toJSONString(this);
+			
+
+		}, false);
+
+	});
+
+})();

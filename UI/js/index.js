@@ -1,43 +1,41 @@
 function checkpass() {
-var password = document.getElementById('password1').value;
+var password = document.getElementById('passwordsignup').value;
 var confirmpassword = document.getElementById('confirmpassword').value;
-    if (password == confirmpassword) {
+    if (password === confirmpassword) {
     document.getElementById('message').style.color = 'green';
     document.getElementById('message').innerHTML = 'matching';
-    document.getElementById('submit').disabled =false;
+    document.getElementById('signup').disabled =false;
   } else {
     document.getElementById('message').style.color = 'red';
     document.getElementById('message').innerHTML = 'not matching';
-    document.getElementById('submit').disabled=true;
+    document.getElementById('signup').disabled=true;
   }
 }
 
 
-  (function() {
-	function toJSONString( form ) {
-		var obj = {};
-		var elements = form.querySelectorAll( "input,textarea" );
+var form = document.getElementById("test");
+var obj = {};
+(function() {
+	function toJSONString(form) {
+		var elements = form.querySelectorAll( "input,div,textarea" );
 		for( var i = 0; i < elements.length; ++i ) {
 			var element = elements[i];
 			var name = element.name;
 			var value = element.value;
 
 			if( name ) {
-				obj[ name ] = value;
+				obj[name] = value;
 			}
 		}
 
-		console.log(JSON.stringify( obj ));
+		console.log(JSON.stringify(obj));
 	}
 
-	document.addEventListener("DOMContentLoaded", function() {
-        event.preventDefault();
-		var form =document.getElementById("form");
-		var output =document.getElementById("output");
-		form.addEventListener("submit",function(e) {
+	document.addEventListener( "DOMContentLoaded", function() {
+		form.addEventListener( "submit", function(e) {
 			e.preventDefault();
-			var json = toJSONString(this);
-			output.innerHTML = json;
+			toJSONString(this);
+			
 
 		}, false);
 
