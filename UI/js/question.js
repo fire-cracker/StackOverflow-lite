@@ -3,7 +3,6 @@ function getwords() {
     document.getElementById("para").innerHTML += '<p>'+text
     document.getElementById("words").value = "enter"
   }
-
   function getcomment() {
    var drop=document.getElementById("post").value;
     var comments=document.getElementById("comments");
