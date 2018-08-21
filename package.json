@@ -1,10 +1,11 @@
 {
-  "name": "StackOverflow-lite",
+  "name": "stackoverflow-lite",
   "version": "1.0.0",
   "description": "Andela Developer Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "nodemon app.js --exec babel-node --"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/oyedejipeace/StackOverflow-lite/issues"
   },
-  "homepage": "https://github.com/oyedejipeace/StackOverflow-lite#readme"
+  "homepage": "https://github.com/oyedejipeace/StackOverflow-lite#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "heroku": "^7.9.3",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.9",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {}
 }
