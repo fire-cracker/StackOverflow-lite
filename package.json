@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/oyedejipeace/StackOverflow-lite.git"
   },
-  "keywords": [],
+  "keywords": ["node.js","heroku"],
   "author": "oyedejipeace <oyedejipeace@yahoo.com>",
   "license": "ISC",
   "bugs": {
