@@ -1,14 +1,13 @@
 import express from 'express';
-import db from './db/db';
 import bodyParser from 'body-parser';
+import router from './api/v1/questions';
 // Set up the express app
-const app = express();
+const app = express()
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(router);
-//import router
-import router from './routes/index.js';
+
 const PORT = 5000;
 
 app.listen(PORT, () => {
