@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/oyedejipeace/StackOverflow-lite.git"
   },
-  "keywords": ["node.js","heroku"],
+  "keywords": [
+    "node.js",
+    "heroku"
+  ],
   "author": "oyedejipeace <oyedejipeace@yahoo.com>",
   "license": "ISC",
   "bugs": {
@@ -27,8 +30,9 @@
     "express": "^4.16.3",
     "heroku": "^7.9.3",
     "mocha": "^5.2.0",
-    "mongoose": "^5.2.9",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   },
   "devDependencies": {}
 }
