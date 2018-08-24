@@ -1,3 +1,7 @@
 heroku/
+<<<<<<< HEAD
 node_modules/
 StackOverflow-lite/
+=======
+node_modules/
+>>>>>>> develop
