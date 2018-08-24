@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <link href="css/ask.css" rel="stylesheet" type="text/css"/>
-    <link href="css/navigation.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/ask.css"/>
+    <link href="stylesheets/css/navigation.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
     <nav class="logo-nav">		
         <ul>	
-        <li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
+        <li ><img src="stylesheets/stackoverflow-lite-logo.png" class="main-logo"></li>
         <li>
             <div class="search-container">
                     <a><input type="text" placeholder="Search Q&A" name="search" ></a>
@@ -18,7 +19,7 @@
         </li>
         <div class="home">
         <li><a href="home.html">Home</a></li>
-        <li><a href="ask.html">Ask!</a></li>
+        <li><a href="ask.html" active>Ask!</a></li>
         <li><a href="question.html">Top Questions</a></li>
         <li><a href="profile.html">Profile</a></li>
         
@@ -30,48 +31,44 @@
             <div class="header">
                     <h2>Ask a Question</h2>
                 <div class="profile">
-                    <img src="img/avarter.ico" class="avarter_icon" id="help_icon" />
+                    <img src="stylesheets/avarter.ico" class="avarter_icon" id="help_icon" />
                 </div>
                 
             </div>
 
             <div class="row">
                 <div class="leftcolumn">
-                    <form id="test" method="post">
                     <div class="information_divide">
                         <fieldset>
                             <fieldset>
-                                <legend for="title">Title</legend>
-                                <input type="text" name= "title" placeholder="Whats's your programming question? Be specific." id="question_title" />
+                                <legend>Title</legend>
+                                <input type="text" placeholder="Whats's your programming question? Be specific." id="question_title" />
                                 <br/>
                             </fieldset>
                             <br>
                             <fieldset>
-                                <legend for="description">Description</legend>
+                                <legend>Body</legend>
                                 <br/>
-                                <textarea id="question_body" name="description" rows="6" cols="100" placeholder="Discuss Challenge Here!"></textarea>
+                                <textarea id="question_body" rows="6" cols="100" placeholder="Discuss Challenge Here!"></textarea>
                             </fieldset>
                             <br>
                             <fieldset>
-                                <legend for="tag">Tag</legend>
+                                <legend>Tag</legend>
                                 <br/>
-                                <input type="text" id="question_tag" name="tag" placeholder="Enter tags Separated by a Coma">
+                                <input type="text" id="question_tag" placeholder="Enter tags Separated by a Coma">
                             </fieldset>
                         </fieldset>
                         <br>
-                        <br>
-                        <input type="submit" class="button" id="post_question" value="Post your Question"> 
+                        <button type="button" class="button" id="post_question"> Post your Question </button>
+
                     </div>
-                </form>
                     <div class="information_divide">
                         <legend>Your Questions</legend>
                     </div>
-               
                     <div class="information_divide" id="your_questions">
 
                     </div>
                 </div>
-              
                 <div class="rightcolumn">
                     <div class="information_divide">
                         <h2>Total Question Posted</h2>

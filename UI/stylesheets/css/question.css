@@ -1,0 +1,160 @@
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:120%;
+    width:100%;
+    margin: 0px;
+}
+/*tags*/
+.tag-question{
+    flex: 1;
+    border: powderblue;
+    border-style: hidden;
+    color: rgb(161, 161, 223);
+    margin: 5px 0px 0px 10px; 
+}
+.tags{
+    display: flex;
+    margin-top: 0px;
+    border: powderblue;
+    border-style: hidden;
+    width: 40%; 
+   
+}
+.tags a{
+    border-style: hidden;
+    background-color: powderblue;
+    text-decoration: none;
+    margin:0px 10px 0px 0px;
+    padding:0px 5px 0px 5px;
+}
+.time{  
+    margin:0px 55px 0px 90px;
+}
+.time a{   
+    text-decoration: none;
+    color: black;
+}
+.time a:nth-child(2){   
+    color: blue;
+}
+
+.tag-time{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+}
+.page{
+    border-style: solid;
+    border-width:0px 1px 0px 1px;
+    border-color: rgb(160,160,255);
+    width:1200px;
+    margin:0px 30px 0px 70px;
+}
+h2{
+    text-align: left;
+    margin:50px 50px 0px 0px;
+    padding-bottom:10px;
+    text-shadow: 2px 2px #6e5c74;
+    color:#5d4343;
+}
+.question{
+    display:flex;
+    border-style: solid;
+    border-color: rgb(160,160,255);
+    border-width: 0.5px 0px 0px 0px;
+    justify-content: space-between;
+    margin-left:55px;
+    margin-right: 55px;
+    width:90%;
+}
+#squestions{
+    margin-left: 0px;
+    margin-right: 20px;
+    padding-top: 20px;
+   
+}
+.updown{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    margin:0px 10px 0px 30px;
+    padding:5px;
+}
+p.main-question{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    margin:0px 90px 0px 0px;
+    height:120px;
+    margin-top:0px;
+    width:1000px;
+
+}
+.comment{
+    display:flex;
+    margin-left:90px;
+}
+form#commentbutton{
+    width:5%;
+    height:5%;
+}
+p#para{
+    margin-left:40px;
+}
+section#post-answer{
+    display:none;
+}
+
+.qpost{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    background-color:#bbbaba;  */
+    align-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .lk{
+      height: 20px;
+      width: 20px;
+      margin: 0px;
+      padding-left: 10px;
+  }
+  
+  .lkn{
+    padding-left: 10px;   
+  }
+  
+.post_form textarea{
+      height: 3cm;
+      width: 15cm;
+  }
+
+  .btn{
+      height: 50px;
+      width: 50px;
+      background-color: #4CAF50;
+      color: white;
+  }
+
+input[type=button]:not(.btn){
+    width: 6%;
+    height:3%;
+    padding: 1px;
+    display:inline-block;
+}
+
+input[type=button]{
+    background-color:#743f26b3;
+    box-shadow:  3px 3px #403939;
+}
+.btn{
+    width:95%;
+}
+textarea#words{
+    margin-left: 60px;
+    width: 7%;
+}

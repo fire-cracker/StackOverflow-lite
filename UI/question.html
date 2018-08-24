@@ -1,8 +1,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/question.css">
-    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/css/question.css">
+    <link href="stylesheets/css/navigation.css"rel="stylesheet"type="text/css" />
     <script src="js/question.js"></script>
 </head>
 
@@ -10,7 +11,7 @@
 
     <nav class="logo-nav">		
         <ul>	
-        <li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
+        <li ><img src="stylesheets/stackoverflow-lite-logo.png" class="main-logo"></li>
         <li>
             <div class="search-container">
                     <a><input type="text" placeholder="Search Q&A" name="search" ></a>
@@ -20,7 +21,7 @@
         <div class="home">
         <li><a href="home.html">Home</a></li>
         <li><a href="ask.html">Ask!</a></li>
-        <li><a href="question.html">Top Questions</a></li>
+        <li><a href="question.html"active>Top Questions</a></li>
         <li><a href="profile.html">Profile</a></li>      
     </div>
         </ul> 
@@ -33,15 +34,15 @@
             <div class="question">
                 <div class="updown">
                     <a href="">
-                        <img class="lk" src="img/like.png">
+                        <img class="lk" src="stylesheets/like.png">
                     </a>
                     <p class="lkn">20</p>
                     <a href="">
-                        <img class="lk" src="img/dislike.png">
+                        <img class="lk" src="stylesheets/dislike.png">
                     </a>
                     <p class="lkn">20</p>
                     <a href="">
-                        <img class="lk" src="img/star.png">
+                        <img class="lk" src="stylesheets/star.png">
                     </a>
                 </div>
 
@@ -74,7 +75,7 @@
                 <p id="para"></p>
                 <form class="comment">
                     <textarea id="words" rows="2" cols="70" value="comment.."></textarea>
-                    <input type="button" onclick="getwords()" value="comment" />
+                    <input type="button" onclick="getwords()" value="comment"/>
                     <br>
 
                 </form>
@@ -88,15 +89,15 @@
             <div class="question">
                 <div class="updown">
                     <a href="">
-                        <img class="lk" src="img/like.png">
+                        <img class="lk" src="stylesheets/like.png">
                     </a>
                     <p class="lkn">20</p>
                     <a href="">
-                        <img class="lk" src="img/dislike.png">
+                        <img class="lk" src="stylesheets/dislike.png">
                     </a>
                     <p class="lkn">20</p>
                     <a href="">
-                        <img class="lk" src="img/star.png">
+                        <img class="lk" src="stylesheets/star.png">
                     </a>
                 </div>
 
@@ -122,7 +123,7 @@
             <div class="comment-section">
                 <p id="para"></p>
                 <form class="comment">
-                    <textarea id=0"words" rows="2" cols="70" value="comment.."></textarea>
+                    <textarea id="words" rows="2" cols="70" value="comment.."></textarea>
                     <input type="button" onclick="getwords()" value="comment" />
                     <br>
 
@@ -134,15 +135,15 @@
         <div class="question">
             <div class="updown">
                 <a href="">
-                    <img class="lk" src="img/like.png">
+                    <img class="lk" src="stylesheets/like.png">
                 </a>
                 <p class="lkn">20</p>
                 <a href="">
-                    <img class="lk" src="img/dislike.png">
+                    <img class="lk" src="stylesheets/dislike.png">
                 </a>
                 <p class="lkn">20</p>
                 <a href="">
-                    <img class="lk" src="img/star.png">
+                    <img class="lk" src="stylesheets/star.png">
                 </a>
             </div>
 
@@ -162,7 +163,7 @@
         <div class="comment-section">
             <p id="para"></p>
             <form class="comment">
-                <textarea id="words" rows="2" cols="70" value="comment.."></textarea>
+                <textarea id="words" rows="2" cols="50" value="comment.."></textarea>
                 <input type="button" onclick="getwords()" value="comment" />
                 <br>
 
@@ -172,7 +173,7 @@
         <div class="qpost">
             <form class="post_form">
                 <textarea id="post" value="post answer"></textarea>
-                <input type="button" value="Postanswer" onclick="getcomment();toggleA();" class="btn">
+                <input type="button" value="Post answer" onclick="getcomment();toggleA();" class="btn">
             </form>
         </div>
         </section>

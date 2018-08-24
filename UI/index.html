@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/index.css">
-		<link rel="stylesheet" href="css/navigation.css"  type="text/css"/>
+		<link rel="stylesheet" href="stylesheets/css/index.css">
+		<link href="stylesheets/css/navigation.css"rel="stylesheet" type="text/css"/>
 </head>
-<body background="img/stackoverflow-lite-background.jpg">
+<body background="stylesheets/stackoverflow-lite-background.jpg">
 
 		<nav class="logo-nav">		
 				<ul>	
-				<li ><img src="img/stackoverflow-lite-logo.png" class="main-logo"></li>
+				<li ><img src="stylesheets/stackoverflow-lite-logo.png"class="main-logo"></li>
 				<li>
 					<div class="search-container">
 							<a><input type="text" placeholder="Search Q&A" name="search" ></a>
@@ -35,64 +35,62 @@
 		<div id="login" class="animate form">
 			<form  action="mysuperscript.php" autocomplete="on"> 
 				<h1>Log in</h1> 
-				<p> 
+				<div> 
 					<label for="username" class="uname"> Your email or username </label>
 					<input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-				</p>
-				<p> 
+				</div>
+				<div> 
 					<label for="password" class="youpasswd" > Your password </label>
 					<input id="password" name="password" required="required" type="password" placeholder="eg. *********" /> 
-				</p>
-				<p class="keeplogin"> 
+				</div>
+				<div class="keeplogin"> 
 					<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 					<label for="loginkeeping">Keep me logged in</label>
-				</p>
-				<p class="login button"> 
-					<input type="submit" formaction="home.html" value="Login" /> 
-				</p>
-				<p class="change_link">
+				</div>
+				<div class="login button"> 
+					<input type="submit" formaction="home.html" value="Login" id="submit"/> 
+				</div>
+				<div class="change_link">
 					Not a member yet ?
 					<a href="#toregister" class="to_register">Join us</a>
-				</p>
+				</div>
 			</form>
 		</div>
 
 
 		<div id="register" class="animate form">
-			<form id="test" action="mysuperscript.php" autocomplete="on"> 
+			<form  action="mysuperscript.php" autocomplete="on"> 
 				<h1> Sign up </h1> 
-				<p> 
-					<label for="username" class="uname" >Your username</label>
-					<input id="usernamesignup" name="username" required="required" type="text" placeholder="mysuperusername690" />
-				</p>
-				<p> 
-					<label for="email" class="youmail" > Your email</label>
-					<input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
-				</p>
-				<p> 
-					<label for="password" class="youpasswd" >Your password </label>
-					<input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. *********" onkeypress="checkpass()"/>
-				</p>
-				<p> 
-					<label for="password" class="youpasswd" >Please confirm your password </label>
-					<input id="confirmpassword" name="password" required="required" type="password" placeholder="eg. *********" onkeypress="checkpass()"/>
-				</p>
-				<p id="message"></p>
+				<div> 
+					<label for="usernamesignup" class="uname" >Your username</label>
+					<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+				</div>
+				<div> 
+					<label for="emailsignup" class="youmail" > Your email</label>
+					<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+				</div>
+				<div> 
+					<label for="passwordsignup" class="youpasswd" >Your password </label>
+					<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. *********"/>
+				</div>
+				<div> 
+					<label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
+					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. *********"/>
+				</div>
 				<form>
-				<p class="signin button"> 
-					<input type="submit" formaction="home.html" value="Sign up"id="signup" disabled >
-				</p>
+				<div class="signin button"> 
+					<input type="submit" formaction="home.html" value="Sign up" id="submit">
+				</div>
 			    </form>
-				<p class="change_link">  
+				<div class="change_link">  
 					Already a member ?
 					<a href="#tologin" class="to_register"> Go and log in </a>
-				</p>
+				</div>
 			
 		</div>
 		
 	</div>
 </div>  
-<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
 
