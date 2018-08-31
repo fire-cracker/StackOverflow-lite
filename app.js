@@ -13,6 +13,7 @@ module.exports = function(config) {
     reporters: ["progress", "coverage"]
   });
 };
+
 // Set up the express app
 const app = express()
 // Parse incoming requests data
