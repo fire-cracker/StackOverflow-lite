@@ -1,19 +1,20 @@
-<h2>StackOverflow-lite</h2> 
+# StackOverflow-lite
+
  [![Build Status](https://travis-ci.org/oyedejipeace/StackOverflow-lite.svg?branch=develop)](https://travis-ci.org/oyedejipeace/StackOverflow-lite)[![Coverage Status](https://coveralls.io/repos/github/oyedejipeace/StackOverflow-lite/badge.svg?branch=develop)](https://coveralls.io/github/oyedejipeace/StackOverflow-lite?branch=develop)[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/oyedejipeace/StackOverflow-lite)
 
 
-<h2>Description</h2> <br>
+## Description 
 StackOverflow-lite is a question and answer platform. A community for developers to share, learn and build.
 It provides a platform to gain knowledge.
 
-<h2>Documentation</h2><br>
+## Documentation
 GET(localhost:5000/api/v1/questions)<br>
 GET(localhost:5000/api/v1/questions/:id)<br>
 POST(localhost:5000/api/v1/questions')<br>
 PUT(localhost:5000/api/v1/questions/:id)<br>
 DELETE(localhost:5000/api/v1/questions/:id)<br>
 
-<h2>Dependencies</h2><br>
+## Dependencies
 NodeJS - A JavaScript runtime environment<br>
 Express - A web application framework for NodeJS<br>
 babel-cli - A tool for transpiling the code through the command line.<br>
@@ -26,7 +27,7 @@ mocha - A JavaScript test framework for Node.js programs.<br>
 nodemon - A tool that will monitor for any changes in the source and automatically restart the server.<br>
 path - A module provides utilities for working with file and directory paths.<br>
 
-<h2>Setup</h2><br>
+## Setup
 Follow these steps to set up the project in development mode
 
 Install Nodejs<br>
