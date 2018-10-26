@@ -7,7 +7,7 @@ script:
   - npm run coverage
 
 before_install:
-  - npm i -g babel-preset-env mocha supertest node-dev babel-cli rimraf coveralls istanbul pg
+  - npm i -g babel-preset-env mocha supertest node-dev babel-cli rimraf coveralls istanbul
 
 
 after_script:
