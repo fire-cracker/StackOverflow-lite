@@ -37,17 +37,11 @@ class controller {
         success: 'false',
         message: 'description is required',
       });
-    }else if (!req.body.tags) {
-      return res.status(400).send({
-        success: 'false',
-        message: 'tags is required',
-      });
     }
     const question = {
       id: db.length + 1,
       title: req.body.title,
       description: req.body.description,
-      tags: req.body.tags,
     };
     db.push(question);
     return res.status(201).send({
@@ -85,17 +79,12 @@ class controller {
         success: 'false',
         message: 'description is required',
       });
-    } else if (!req.body.tags) {
-      return res.status(400).send({
-        success: 'false',
-        message: 'tags is required',
-      });
     }
+
     const newquestion = {
       id: questionFound.id,
       title: req.body.title || questionFound.title,
       description: req.body.description || questionFound.description,
-      tags: req.body.tags || questionFound.tags,
     };
 
     db.splice(itemIndex, 1, newquestion);
@@ -131,10 +120,7 @@ class controller {
       message: 'question deleted successfuly',
     });
   }
-
- 
 }
-
 
 const Controller = new controller();
 export default Controller;
