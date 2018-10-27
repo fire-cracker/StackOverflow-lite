@@ -12,19 +12,31 @@ class controller {
   getquestion(req, res) {
     const id = parseInt(req.params.id, 10);
     db.map((question) => {
-      if (question.id === id) {
-        return res.status(200).send({
-          success: 'true',
-          message: 'question retrieved successfully',
-          question,
-        });
-      }
+        if (question.id === id) {
+            console.log("got here")
+            return res.status(200).send({
+                success: 'true',
+                message: 'question retrieved successfully',
+                question,
+            });
+        }
+        else if (Number.isInteger(id) === false  || id == false) {
+            console.log("got here now")
+            return res.status(400).json({
+                status: 'fail',
+                message: 'Invalid params',
+            });
+        }
+        else {
+            console.log("lastly")
+            return res.status(404).send({
+                success: 'false',
+                message: 'question does not exist',
+            });
+        }
     });
-    return res.status(404).send({
-      success: 'false',
-      message: 'question does not exist',
-    });
-  }
+}
+  
 
   createquestion(req, res) {
     if (!req.body.title) {
@@ -68,13 +80,20 @@ class controller {
         message: 'question not found',
       });
     }
-
-    if (!req.body.title) {
+    if (!req.body.title && !req.body.description) {
+      console.log("got here")
+      return res.status(400).send({
+        success: 'false',
+        message: 'body is required',
+      });
+    } else if (!req.body.title) {
+      console.log("got here title")
       return res.status(400).send({
         success: 'false',
         message: 'title is required',
       });
     } else if (!req.body.description) {
+      console.log("got here description ")
       return res.status(400).send({
         success: 'false',
         message: 'description is required',
@@ -105,20 +124,32 @@ class controller {
         questionFound = question;
         itemIndex = index;
       }
-    });
-
-    if (!questionFound) {
-      return res.status(404).send({
-        success: 'false',
-        message: 'question not found',
-      });
+      else if (Number.isInteger(id ) === false || id  == false) {
+        console.log("got here now")
+        return res.status(400).json({
+            status: 'fail',
+            message: 'Invalid params',
+        });
     }
-    db.splice(itemIndex, 1);
-
-    return res.status(200).send({
-      success: 'true',
-      message: 'question deleted successfuly',
+      else if (!questionFound) {
+        console.log("got here")
+        return res.status(404).send({
+          success: 'false',
+          message: 'question not found',
+        });
+      }
+      db.splice(itemIndex, 1);
+      return res.status(200).send({
+        success: 'true',
+        message: 'question deleted successfuly',
+      });
+     
     });
+
+   
+    
+
+    
   }
 }
 
