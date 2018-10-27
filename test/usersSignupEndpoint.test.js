@@ -1,3 +1,8 @@
+import userData from '../test/model/userSignup';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 // describe('User signup', () => {
 //   it('Should signup a user successfully', (end) => {
 //     request(app).get('/api/v1/questions')
